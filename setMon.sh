@@ -20,18 +20,9 @@ if [[ ! $input || $input = *[^0-2]* ]]; then
 fi
 
 if [[ ! $input || $input = 1 ]]; then 
-    xrandr --output eDP1 --mode 1920x1080 --rotate normal --output DP2-2 --right-of eDP1 --auto --mode 3440x1440 --dpi 100
+    xrandr --output eDP1 --auto --output DP1 --right-of eDP1 --auto
 
     #i3-msg workspace 1 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 2 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 3 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 4 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 5 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 6 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 7 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 8 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 9 && i3-msg move workspace to output DP2-2
-    #i3-msg workspace 10 && i3-msg move workspace to output DP2-2
 
     elif [[ ! $input || $input = 2 ]]; then
     xrandr -s 0
